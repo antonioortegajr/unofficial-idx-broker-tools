@@ -28,7 +28,7 @@
   <li>Returns data on the API call made</li>
   </ul>
   </p>
-<h3><a href="site-analyzer">Find Advacned Fields</a></h3>
+<h3><a href="advanced-fields">Find Advacned Fields</a></h3>
 <p>trying to find an advanced feild in an MLS data set can be cumbersome. Instead this tool uses the API to bring all adnaced fields and creates a link to a list of field values. Each click on a field values link is an API call so be midful of rate API limits.
   <p>
 <p>This tool does the following:
