@@ -2,7 +2,7 @@
 
 This Repo will house any unofficial idx broker tools
 
-NONE of these tools will be supported by IDX Broker in ANY way. 
+NONE of these tools will be supported by IDX Broker in ANY way.
 
 Please DO NOT contact IDX Broker support regarding these tools.
 
@@ -15,7 +15,10 @@ Each tool will have it's own ReadMe.md
 Live tools on heroku: https://unofficial-idx-broker-tools.herokuapp.com/
 
 
-Current Tools:
+##Current Tools:
 
 ## Site Analyzer
 Check a page for SEO attributes. Return things like mobile friendlyness and if the page contains iframes.
+
+## API Quick Tester
+This is a very simple tester of API keys and calls to the IDX Broker API.

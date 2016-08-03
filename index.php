@@ -17,5 +17,12 @@
 <li>Creates link to check for number of indexed pages</li>
 </ul>
 </p>
+  <h3><a href="api-quick-tester">API Quick Tester</a></h3>
+  <p>This tool does the following:
+  <ul>
+  <li>Makes GET calls to the IDX broker API</li>
+  <li>Returns data on the API call made</li>
+  </ul>
+  </p>
 </body>
 </html>
