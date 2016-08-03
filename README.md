@@ -18,7 +18,10 @@ Live tools on heroku: https://unofficial-idx-broker-tools.herokuapp.com/
 ##Current Tools:
 
 ## Site Analyzer
-Check a page for SEO attributes. Return things like mobile friendlyness and if the page contains iframes.
+Check a page for SEO attributes. Return things like mobile friendliness and if the page contains iframes.
 
 ## API Quick Tester
 This is a very simple tester of API keys and calls to the IDX Broker API.
+
+## Find Advanced Fields
+Use the API to list all advanced fields and then click on one to see the search field values.
