@@ -13,7 +13,7 @@ GitHub repo: <a href="https://github.com/antonioortegajr/unofficial-idx-broker-t
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/antonioortegajr/unofficial-idx-broker-tools" data-icon="octicon-eye" data-style="mega" data-count-href="/antonioortegajr/unofficial-idx-broker-tools/watchers" data-count-api="/repos/antonioortegajr/unofficial-idx-broker-tools#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch antonioortegajr/unofficial-idx-broker-tools on GitHub">Watch</a>
 </p>
-<p>About: These are tools were created with the intent of making tasks relating to IDX Broker easier. They are not part of any offcial IDX Broker product nor are they endorsed by IDX Broker. Any issues/enhancements are only to be submitted via the GitHub repo.
+<p>About: These are tools were created with the intent of making tasks relating to IDX Broker easier. They are not part of any offcial IDX Broker product nor are they endorsed by IDX Broker. Each tool is a stand alone application. They are not dependant on each other in any way. See readme.md in the repo for more. Any issues/enhancements are only to be submitted via the GitHub repo.
 </p>
 <hr>
 <h3><a href="site-analyzer">Site Analyzer</a></h3>

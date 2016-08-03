@@ -25,3 +25,7 @@ This is a very simple tester of API keys and calls to the IDX Broker API.
 
 ## Find Advanced Fields
 Use the API to list all advanced fields and then click on one to see the search field values.
+
+###Dependancies
+
+Each tool is meant to be stand alone. Even if they preform similar functions like making an API call the tools do not share files or functions. This is so you can take any one of them and use with out the other tools.
