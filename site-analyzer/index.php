@@ -1,3 +1,7 @@
+<html>
+<head>
+</head>
+<body style="padding-left: 10%; padding-right: 10%;">
 <?php
 
 //url to check
@@ -83,3 +87,5 @@ else{
 }
 
 ?>
+</body>
+</html>

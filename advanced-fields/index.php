@@ -1,7 +1,7 @@
 <html>
 <head>
 </head>
-<body>
+<body style="padding-left: 10%; padding-right: 10%;">
 
 <?php
 $test_key = $dev_test_key = $mlsID  = $meth = $out = "";
