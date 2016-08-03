@@ -10,7 +10,10 @@ All tools will be in PHP.
 
 Tools I have already created will move to this repo for new development.
 
+Each tool will have it's own ReadMe.md
+
 Live tools on heroku: https://unofficial-idx-broker-tools.herokuapp.com/
+
 
 Current Tools:
 
