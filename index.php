@@ -40,7 +40,7 @@ GitHub repo: <a href="https://github.com/antonioortegajr/unofficial-idx-broker-t
   <p>
 <p>This tool does the following:
 <ul>
-<li>Makes GET calls to the IDX broker API for advanced fields in an MLS</li>
+<li>Tired of asking if a feild is in a MLS data set? Makes GET calls to the IDX broker API for advanced fields in a MLS</li>
 <li>Links all advanced feilds returned to searchfieldvalues GET call to return values in data set</li>
 </ul>
 </p>
