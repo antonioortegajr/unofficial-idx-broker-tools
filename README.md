@@ -32,3 +32,5 @@ Each tool is meant to be stand alone. Even if they preform similar functions lik
 
 ##About
 This collect was put together for the benifit of anyone supporting an IDX Broker account(s).
+
+Each tool can be deployed to heroku. Click the deploy button on the readme.md each tool has.
