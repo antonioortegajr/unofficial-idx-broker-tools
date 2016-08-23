@@ -27,7 +27,3 @@ but I did spend a lot of time writing json responses for pop culture reference w
 
 Pull requests welcome.
 
-## Run on Heroku 
-The source can be run on [Heroku](https://www.heroku.com/) using the free service level.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
