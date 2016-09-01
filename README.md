@@ -34,8 +34,7 @@ Each tool is meant to be stand alone. Even if they preform similar functions lik
 This collect was put together for the benifit of anyone supporting an IDX Broker account(s).
 
 
-## Run on Heroku 
+## Run on Heroku
 The source can be run on [Heroku](https://www.heroku.com/) using the free service level.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
