@@ -36,12 +36,12 @@ GitHub repo: <a href="https://github.com/antonioortegajr/unofficial-idx-broker-t
   </ul>
   </p>
 <h3><a href="advanced-fields">Find Advacned Fields</a></h3>
-<p>Trying to find an advanced feild in an MLS data set can be cumbersome. Instead this tool uses the API to bring all adnaced fields and creates a link to a list of field values. Each click on a field values link is an API call so be midful of rate API limits.
+<p>Trying to find an advanced field in an MLS data set can be cumbersome. Instead this tool uses the API to bring all adnaced fields and creates a link to a list of field values. Each click on a field values link is an API call so be midful of rate API limits.
   <p>
 <p>This tool does the following:
 <ul>
-<li>Tired of asking if a feild is in a MLS data set? Makes GET calls to the IDX Broker API for advanced fields in a MLS</li>
-<li>Links all advanced feilds returned to searchfieldvalues GET call to return values in data set</li>
+<li>Tired of asking if a field is in a MLS data set? Makes GET calls to the IDX Broker API for advanced fields in a MLS</li>
+<li>Links all advanced fields returned to searchfieldvalues GET call to return values in data set</li>
 </ul>
 </p>
 <h3><a href="mls-refresh">Check last MLS refresh</a></h3>
