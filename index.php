@@ -36,12 +36,21 @@ GitHub repo: <a href="https://github.com/antonioortegajr/unofficial-idx-broker-t
   </ul>
   </p>
 <h3><a href="advanced-fields">Find Advacned Fields</a></h3>
-<p>trying to find an advanced feild in an MLS data set can be cumbersome. Instead this tool uses the API to bring all adnaced fields and creates a link to a list of field values. Each click on a field values link is an API call so be midful of rate API limits.
+<p>Trying to find an advanced feild in an MLS data set can be cumbersome. Instead this tool uses the API to bring all adnaced fields and creates a link to a list of field values. Each click on a field values link is an API call so be midful of rate API limits.
   <p>
 <p>This tool does the following:
 <ul>
-<li>Tired of asking if a feild is in a MLS data set? Makes GET calls to the IDX broker API for advanced fields in a MLS</li>
+<li>Tired of asking if a feild is in a MLS data set? Makes GET calls to the IDX Broker API for advanced fields in a MLS</li>
 <li>Links all advanced feilds returned to searchfieldvalues GET call to return values in data set</li>
+</ul>
+</p>
+<h3><a href="mls-refresh">Check last MLS refresh</a></h3>
+<p>Chack the last refresh for approved MLS(s) on an account. Each check is one call for all approved MLSs and one for each indiviual MLS refresh time. So be middful of rate API limits.
+  <p>
+<p>This tool does the following:
+<ul>
+<li>Makes GET call to the API for approved MLSs</li>
+<li>Makes a GET call for each approved MLS ID and displays the returned refresh times for each approved MLS</li>
 </ul>
 </p>
 </body>
