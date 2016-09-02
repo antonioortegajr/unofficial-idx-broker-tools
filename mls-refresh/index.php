@@ -89,7 +89,7 @@ foreach ($r as $key => $value) {
  ?>
 <hr>
 <h3>What if I am still missing properties???</h3>
-If you are still missing properties and you knwo the property was entered in the MLS after the processing time shown above:
+If you are still missing properties and you know the property was entered in the MLS before the processing time shown above:
 <ul>
 <li>Check that the porperty is allowed to be shown via IDX</li>
 <li>Send the MLS listing ID of the property and the domain of the cleint to developers@idxbroker.com</li>
