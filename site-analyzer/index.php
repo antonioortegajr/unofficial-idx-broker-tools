@@ -48,7 +48,7 @@ if ($url != NULL){
 			//Check for mobile friendlyness
 			switch ($result["ruleGroups"]["USABILITY"]["pass"]) {
 				case 0:
-				$mobile_friendly = 'False. Not mobile firndly. Visit<a hre=https://www.google.com/webmasters/tools/mobile-friendly/?url="'.$url.'">Google\'s mobile test page</a> for more info With more and more traffic happening on mobile devices mobile friendliness is critical.';
+				$mobile_friendly = 'False. Not mobile friendly. Visit <a href=https://www.google.com/webmasters/tools/mobile-friendly/?url="'.$url.'">Google\'s mobile test page</a> for more info With more and more traffic happening on mobile devices mobile friendliness is critical.';
 				break;
 
 				case 1:
