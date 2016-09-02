@@ -48,7 +48,7 @@ if ($url != NULL){
 			//Check for mobile friendlyness
 			switch ($result["ruleGroups"]["USABILITY"]["pass"]) {
 				case 0:
-				$mobile_friendly = 'False. With more and more traffic happening on mobile devices mobile friendliness is critical.';
+				$mobile_friendly = 'False. Not mobile firndly. Visit<a hre=https://www.google.com/webmasters/tools/mobile-friendly/?url="'.$url.'">Google\'s mobile test page</a> for more info With more and more traffic happening on mobile devices mobile friendliness is critical.';
 				break;
 
 				case 1:
@@ -83,7 +83,7 @@ if ($url != NULL){
 
 }
 else{
-	echo '<h1>Analyze your website</h1><p>Let\'s check your website for attributes all current real estate websits should measure.</p><p>Please enter a url</p><form action="" method="GET"><input name="domain"><input type="submit" value="Submit">';
+	echo '<h1>Analyze your website</h1><p>Let\'s check your website for attributes all current real estate websites should measure.</p><p>Please enter a url</p><form action="" method="GET"><input name="domain"><input type="submit" value="Submit">';
 }
 
 ?>
