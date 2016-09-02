@@ -20,8 +20,8 @@ GitHub repo: <a href="https://github.com/antonioortegajr/unofficial-idx-broker-t
 <p>When evaluating a web page there are many factors to take into consideration. How search engines may view being one of the biggest. Some automization can make this evaluation quicker and even self serve.</p>
 <p>This tool does the following:
 <ul>
-<li>Mobile friendliness</li>
-<li>Google page Speed score</li>
+<li>Checks Mobile friendliness</li>
+<li>Checks Google page Speed score</li>
 <li>Checks for iframes</li>
 <li>Creates link to check for number of indexed pages</li>
 </ul>
