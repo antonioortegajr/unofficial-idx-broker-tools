@@ -332,8 +332,9 @@ This only tests GET calls as shown in the <a href="http://middleware.idxbroker.c
           </select> //optional and overrides middleware settings
           <br><br>
           API Version: <select type="text" id="version" value="" class="button-secondary button-xlarge"> //be sure the method you are calling is available this version
-            <option value="1.2.2">1.3.0</option>
-            <option value="1.2.2">1.2.3</option>
+            <option value="1.4.0">1.3.0</option>
+            <option value="1.3.0">1.3.0</option>
+            <option value="1.2.3">1.2.3</option>
             <option value="1.2.2">1.2.2</option>
             <option value="1.2.1">1.2.1</option>
             <option value="1.2.0">1.2.0</option>
