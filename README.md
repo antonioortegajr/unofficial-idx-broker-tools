@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/antonioortegajr/unofficial-idx-broker-tools.png?label=ready&title=Ready)](https://waffle.io/antonioortegajr/unofficial-idx-broker-tools)
 # unofficial-idx-broker-tools
 
 This Repo will house any unofficial idx broker tools
