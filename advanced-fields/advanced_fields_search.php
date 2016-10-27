@@ -4,6 +4,7 @@
 <body style="padding-left: 10%; padding-right: 10%;">
 
 <?php
+//set variables to nothing
 $test_key = $dev_test_key = $mlsID  = $meth = $out = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
@@ -28,14 +29,11 @@ function test_input($data)
 
 <h1>Quick API Advanced Fields check</h1>
 
-<!--- Nick's API key: <b>nb3aPvidEaSFgt6ncJHtGw</b><br><br>and the<br><br>Dev Partner key for his account:<b> YLYsuwps-9kG0PyicpGsQZ</b> </p> -->
 <p>Currently tests the API response for Advanced Search Fields in prop type 1, some time and size reporting, and Get call tests based on example code from API docs. Output is json or xml. Not choosing an output will assume json when making the call.</p>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-   Test Key: <input type="text" name="test_key">
-Test Dev Partner Key: <input type="text" name="dev_test_key">
-<br>MLS ID: <input type="text" name="mlsID">
+   API Key: <input type="text" name="test_key">
 <br><br>
-Sample API call for advanced fields<br>
+API call for advanced fields with in a MLS<br>
 <br>
    <br><br>
    <input type="submit" name="submit" value="Submit">
@@ -64,7 +62,6 @@ $out = 'json';
 $headers = array(
 	"Content-Type: application/x-www-form-urlencoded", // required
 	"accesskey: " . $test_key, // required - replace with your own
-        "ancillarykey: " . $dev_test_key,
 	"outputtype: " . $out // optional - overrides the preferences in our API control page
 
 );
