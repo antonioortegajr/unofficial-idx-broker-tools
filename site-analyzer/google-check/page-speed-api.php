@@ -44,6 +44,4 @@ function isMobileReady($url, $apiKey)
       echo '<h2>Google Page Speed score:</h2> '.$page_speed.' This is google\'s page speed score for your site. The scale goes to 100.';
     }
     echo $breaks;
-    echo '<hr>Done testing. Some tests may not be shown due to timeouts or other issues.';
-
 ?>

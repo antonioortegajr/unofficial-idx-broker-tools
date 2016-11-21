@@ -22,6 +22,9 @@ if ($url != NULL){
 			//check site for iframes and CMS indicators
 			include_once 'site/check.php';
 
+			echo $breaks;
+			echo '<hr>Done testing. Some tests may not be shown due to timeouts or other issues.';
+
 }
 else{
 	echo '<h1>Analyze your website</h1><p>Let\'s check your website for attributes all current real estate websites should measure.</p><p>Please enter a url</p><form action="" method="GET"><input name="domain"><input type="submit" value="Submit">';
