@@ -20,65 +20,66 @@ $weebly_pattern = "/\bassets-www1.weebly(?:.com)\b/i";
 $websitebox_pattern = "/\b\/wsbx(?:\/)\b/i";
 
 //WP test
-if (preg_match_all($wordpress_pattern, $data, $matches)) {
+if (preg_match_all($wordpress_pattern, $data, $matches, PREG_SET_ORDER)) {
     echo "Number of WordPress indicators found: ";
     echo count($matches);
 }
 
 //WIX test
-elseif (preg_match_all($wix_pattern, $data)) {
+elseif (preg_match_all($wix_pattern, $data, $matches)) {
     echo "Number of WIX indicators found:";
     echo count($matches);
 }
 
 //squarespace test
-elseif (preg_match_all($squarespace_pattern, $data)) {
+elseif (preg_match_all($squarespace_pattern, $data, $matches)) {
     echo "Number of squarespace indicators found:";
     echo count($matches);
 }
 
 //drupal test
-elseif (preg_match_all($drupal_pattern, $data)) {
+elseif (preg_match_all($drupal_pattern, $data, $matches)) {
     echo "Number of Drupal indicators found:";
     echo count($matches);
 }
 
 //joomla test
-elseif (preg_match_all($joomla_pattern, $data)) {
+elseif (preg_match_all($joomla_pattern, $data, $matches)) {
     echo "Number of Joomla indicators found:";
     echo count($matches);
 }
 //weebly test
-elseif (preg_match_all($weebly_pattern, $data)) {
+elseif (preg_match_all($weebly_pattern, $data, $matches)) {
     echo "A Weebly indicators found:";
     echo count($matches);
   }
 
 //websitebox test
-elseif (preg_match_all($weebly_pattern, $data)) {
+elseif (preg_match_all($weebly_pattern, $data, $matches)) {
     echo "Number of WebsiteBox indicators found:.";
     echo count($matches);
 }
 else{
   echo 'Unable to find CMS idendifiers.';
 }
-
+echo '<hr>';
 
 //checking for iframes
 echo '<h2>Check for iframes</h2>';
-$iframe = "/<iframe(.*)<\/iframe>/U";
+$iframe = '/<iframe(.*)<\/iframe>/U';
 $pos = strpos($data, $iframe);
 if ($pos === false) {
   echo 'iframes were not found in the page. Great!! Google and search engine crawlers, are unable to index the contect inside of an iframe. If the most important content on the page such as property details pages are within an iframe google is not indexting this content with your website.';
 } else {
-  echo 'iframes found ';
-  echo ' and exists at position'.$pos.'If this is your search, you might want to do soem research to learn more about iframes and real estate SEO.';
+  echo '<p>iframes found and exists at position'.$pos.'If this is your search, you might want to do some research to learn more about iframes and real estate SEO. Here is an article from IDX Broker on iframes, FTP and RETS:
+    </p>
+    <p><a href="https://blog.idxbroker.com/idx-feeds-explained-ftp-iframe-rets/" target="_blank"><https://blog.idxbroker.com/idx-feeds-explained-ftp-iframe-rets/</a>';
 }
+echo '<hr>';
 
-
+include_once 'metatags/metatag.php';
 
 echo '<h2>How about Social?</h2>';
-
 // parse the html into a DOM Document
 $dom = new DOMDocument();
 @$dom->loadHTML($data);
@@ -112,7 +113,11 @@ $facebook_count = count($facebook_links);
 $twitter_count = count($twitter_links);
 
 if($facebook_count + $twitter_count > 4){
-  echo 'Several soucial media links found, looks like social might be important to your site';
+  echo '<p>Several soucial media links found, looks like social might be important to your site
+  </p>
+  <p>IDX Broker offers a facebook applicaion to bring your listings into your facebook business page:
+  </p>
+  <p><a href="http://www.idxbroker.com/features/idx-facebook-application" target="_blank">http://www.idxbroker.com/features/idx-facebook-application</a>';
 }
 elseif ($facebook_count + $twitter_count == 0){
   echo 'No social media links found.';
@@ -125,8 +130,13 @@ echo $breaks;
 foreach ($twitter_links as $links) {
   echo 'Some twitter links found: '.$links. '<br>';
 }
-
+echo '<p>Even if social meida isn\'t the biggest aspect of your online stratagy, IDX Broker offers sharing oppertunity via ShareThis:
+  </p>
+  <p>
+  <a href="http://www.idxbroker.com/features/social-media-sharing-tools" target="_blank">http://www.idxbroker.com/features/social-media-sharing-tools</a>
+  </p>';
 }
+echo '<hr>';
 
 //find email address
 //regex for emails that are not in an anchor
