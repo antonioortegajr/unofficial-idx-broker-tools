@@ -28,7 +28,7 @@ function isMobileReady($url, $apiKey)
     //Check for mobile friendlyness
     switch ($mobile_friendly) {
       case 0:
-      $mobile_friendly = '<h3>Not Mobile Friendly</h3> Not mobile friendly.<br>
+      $mobile_friendly = '<h3>Not Mobile Friendly</h3>
       <p>
       <br>With more and more traffic happening on mobile devices mobile friendliness is critical. IDX Broker offersa a mobile options ofr your IDX pages:<br>
       <a href="http://www.idxbroker.com/benefits/powerful-mobile-options#" target="_blank">http://www.idxbroker.com/benefits/powerful-mobile-options#</a>
