@@ -13,17 +13,7 @@ $data = curl_exec($ch);
 include_once 'site-type/type.php';
 
 //checking for iframes
-echo '<h2>Check for iframes</h2>';
-$iframe = '/<iframe(.*)<\/iframe>/U';
-$pos = strpos($data, $iframe);
-if ($pos === false) {
-  echo 'iframes were not found in the page. Great!! Google and search engine crawlers, are unable to index the contect inside of an iframe. If the most important content on the page such as property details pages are within an iframe google is not indexting this content with your website.';
-} else {
-  echo '<p>iframes found and exists at position'.$pos.'If this is your search, you might want to do some research to learn more about iframes and real estate SEO. Here is an article from IDX Broker on iframes, FTP and RETS:
-    </p>
-    <p><a href="https://blog.idxbroker.com/idx-feeds-explained-ftp-iframe-rets/" target="_blank"><https://blog.idxbroker.com/idx-feeds-explained-ftp-iframe-rets/</a>';
-}
-echo '<hr>';
+include_once 'iframes/iframe.php';
 
 include_once 'metatags/metatag.php';
 
