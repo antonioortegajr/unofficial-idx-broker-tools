@@ -1,4 +1,5 @@
 <?php
+
 //Look for CMS indentifiers in source
 echo '<h2>Is this site built on a CMS?</h2>';
 $wordpress_pattern = "/\bwp-(?:content|includes)\b/i";
@@ -50,12 +51,8 @@ elseif (preg_match_all($weebly_pattern, $data, $matches)) {
     echo count($matches);
 }
 else{
-  echo 'Unable to find CMS idendifiers.';
+  echo 'Unable to find CMS idendifiers on ' . $url;
 }
 echo '<hr>';
-
-
-
-
 
 ?>

@@ -10,6 +10,7 @@ echo $breaks;
 * @param $apiKey
 * @return mixed
 */
+
 function isMobileReady($url, $apiKey)
   {
       $curl = curl_init();
@@ -25,6 +26,7 @@ function isMobileReady($url, $apiKey)
     //result as an array
     $result = json_decode(isMobileReady($url, 'AIzaSyBIO6HebUdpY_idIdH2t3FDq0obSnu0NZA'), true);
     $mobile_friendly = $result["ruleGroups"]["USABILITY"]["pass"];
+
     //Check for mobile friendlyness
     switch ($mobile_friendly) {
       case 0:
@@ -44,6 +46,8 @@ function isMobileReady($url, $apiKey)
     echo '<h2>Is your site Mobile Friendly?</h2> '.$mobile_friendly;
     echo '<hr>';
     echo $breaks;
+    
+    //check page speed
     $page_speed = $result["ruleGroups"]["USABILITY"]["score"];
     if(isset($page_speed)){
       echo '<h2>Google Page Speed Score</h2> '.$page_speed.' This is google\'s page speed score for your site. The scale goes to 100.';

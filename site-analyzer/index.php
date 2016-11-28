@@ -22,12 +22,27 @@ if ($url != NULL){
 			echo '<h2>Site checked:</h2> '.$url;
 			echo '<hr>';
 			echo $breaks;
+
+			//include curl function
+			include_once 'curl/curls.php';
+
 			//check with google for mobile friendliness and page speed
 			include_once 'google-check/page-speed-api.php';
+
 			//check for XML sitemap at /sitemap.xml
-			include_once 'site/sitemap/sitemap-check.php';
-			//check site for iframes and CMS indicators and facebook/twitter links
-			include_once 'site/check.php';
+			include_once 'sitemap/sitemap-check.php';
+
+			//checking for iframes
+			include_once 'iframes/iframe.php';
+
+			//try and determin site type.
+			include_once 'site-type/type.php';
+
+			// search for meta tags
+			include_once 'metatags/metatag.php';
+
+			// search for social
+			include_once 'social/socials.php';
 
 			echo $breaks;
 			echo '<hr>';

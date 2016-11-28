@@ -5,17 +5,20 @@ $ch = curl_init($url.'sitemap.xml');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-$data = curl_exec($ch);
-$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+$map_data = curl_exec($ch);
+$map_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
 echo '<h2>Site Map Check</h2>
 <p>XML Site maps give search engines a map to the pages your site has.
-<p/>';
-if($code == 200){
-  echo 'Site map found at '. $url .'sitemap.xml';
+<p/>
+Returned Status of page: ';
+echo $map_code;
+
+if($map_code == 200){
+  echo 'Site map found at '. $url .'/sitemap.xml';
 }
-elseif($code < 300){
-  echo '<p>Sitemap not found at '. $url .'sitemap.xml
+elseif($map_code < 300){
+  echo '<p>Sitemap not found at '. $url .'/sitemap.xml
   </p>
   <p>IDX Broker offers a site maps for all clients. Both XML and HTML:</p>
   <p>
