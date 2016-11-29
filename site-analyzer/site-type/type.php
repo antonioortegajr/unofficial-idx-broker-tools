@@ -10,49 +10,29 @@ $joomla_pattern = "/\bjui(?:\/js)\b/i";
 $weebly_pattern = "/\bassets-www1.weebly(?:.com)\b/i";
 $websitebox_pattern = "/\b\/wsbx(?:\/)\b/i";
 
-//WP test
-if (preg_match_all($wordpress_pattern, $data, $matches, PREG_SET_ORDER)) {
-    echo "Number of WordPress indicators found: ";
-    echo count($matches);
+function site_check($type, $pattern, $data){
+  if (preg_match_all($pattern, $data, $matches, PREG_SET_ORDER)) {
+      echo 'Number of ' . $type . ' indicators found: ';
+      echo count($matches);
+    }
 }
 
-//WIX test
-elseif (preg_match_all($wix_pattern, $data, $matches)) {
-    echo "Number of WIX indicators found:";
-    echo count($matches);
+$types = array(
+  'WordPress' => $wordpress_pattern,
+  'WIX' => $wix_pattern,
+  'SquareSpace'=>$squarespace_pattern,
+  'Drupal'=>$drupal_pattern,
+  'Joomla'=>$joomla_pattern,
+  'Weebly'=>$weebly_pattern,
+  'WebSiteBox'=>$websitebox_pattern
+);
+
+foreach ($types as $key => $value) {
+  $type = $key;
+  $pattern = $value;
+  site_check($type, $pattern, $data);
 }
 
-//squarespace test
-elseif (preg_match_all($squarespace_pattern, $data, $matches)) {
-    echo "Number of squarespace indicators found:";
-    echo count($matches);
-}
-
-//drupal test
-elseif (preg_match_all($drupal_pattern, $data, $matches)) {
-    echo "Number of Drupal indicators found:";
-    echo count($matches);
-}
-
-//joomla test
-elseif (preg_match_all($joomla_pattern, $data, $matches)) {
-    echo "Number of Joomla indicators found:";
-    echo count($matches);
-}
-//weebly test
-elseif (preg_match_all($weebly_pattern, $data, $matches)) {
-    echo "A Weebly indicators found:";
-    echo count($matches);
-  }
-
-//websitebox test
-elseif (preg_match_all($weebly_pattern, $data, $matches)) {
-    echo "Number of WebsiteBox indicators found:.";
-    echo count($matches);
-}
-else{
-  echo 'Unable to find CMS idendifiers on ' . $url;
-}
 echo '<hr>';
 
 ?>
